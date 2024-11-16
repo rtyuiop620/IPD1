@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+</head>
+<body>
+    <h1>Welcome to the Course!</h1>
+    
+    <!-- Make sure to pass the email from the session and the course name -->
+    <a href="generate_certificate.php?email=<?php echo $_SESSION['user_email']; ?>&course=PHPProgramming" target="_blank">
+        <button>Generate Certificate</button>
+    </a>
+</body>
+</html>

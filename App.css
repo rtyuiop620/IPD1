@@ -1,0 +1,162 @@
+/* General Reset and Base Styles */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #000;
+  }
+  
+  .App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #d8e2dc, #ffccd5);
+  }
+  
+  /* Card Styles */
+  .App .card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .App .card:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Black Text for Start Button and Question Text */
+  h1, .question-container {
+    font-size: 2rem;
+    color: #000; /* Ensures text color is black */
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* Option Styling */
+  label.radio {
+    display: block;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: #495057;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  label.radio:hover {
+    background-color: #e9f5ff;
+  }
+  
+  label.radio input[type="radio"] {
+    display: none;
+  }
+  
+  /* Styling for Selected Option */
+  label.radio.selected {
+    background-color: #74c0fc;
+    color: #fff;
+    border-color: #74c0fc;
+  }
+  
+  /* Button Styling */
+  button {
+    background-color: #74c0fc;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4dabf7;
+  }
+  /* Card and Content Styling */
+  .card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-content .question-text {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .options-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Styling for Radio Options */
+  .radio-option {
+    background-color: #f1f1f1;
+    border: 2px solid transparent;
+    padding: 12px;
+    border-radius: 8px;
+    color: #495057;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .radio-option:hover {
+    background-color: #e9f5ff;
+  }
+  
+  .radio-option.selected {
+    background-color: #74c0fc;
+    color: #ffffff;
+    border-color: #74c0fc;
+  }
+  
+  .radio-option input[type="radio"] {
+    display: none;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #e63946;
+    margin-top: 10px;
+  }
+  
+  /* Next Button Styling */
+  .next-button {
+    background-color: #74c0fc;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .next-button:hover {
+    background-color: #4dabf7;
+  }
